@@ -126,14 +126,14 @@ public class Main {
 		int[] Array;
 		int n; // so luong khach hang
 		int luachon;
-		System.out.println("1. nhap vao n khach hang");
-		System.out.println("2. hien thi thong tin danh sach khach hang.");
+		System.out.println("1. nhap vao n nhan vien");
+		System.out.println("2. hien thi thong tin danh sach nhan vien.");
 	
 		
 		Scanner sc = new Scanner(System.in);
 		do {
 			
-			System.out.println("moi ban nhap vao luo chon :");
+			System.out.println("moi ban nhap vao lua chon :");
 			
 			try {
 				luachon = Integer.parseInt(sc.nextLine());
@@ -144,7 +144,7 @@ public class Main {
 			}
 			switch(luachon) {
 			case 1:{
-				System.out.println("nhap vao so luong khach hang");
+				System.out.println("nhap vao so luong nhan vien");
 				n = Integer.parseInt(sc.nextLine());
 				Array = new int[n];
 				for(int i=0;i<Array.length;i++) {
@@ -155,7 +155,7 @@ public class Main {
 				break;
 			}
 			case 2:{
-				System.out.println("thong tin khach hang co trong danh sach :");
+				System.out.println("thong tin nhan vien co trong danh sach :");
 				for(int i =0;i<danhsach.size();i++) {
 					danhsach.get(i).HienThiTT();
 				}
